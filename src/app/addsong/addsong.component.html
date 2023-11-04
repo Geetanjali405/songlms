@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Add Song</h1>
+<div mat-dialog-content>
+  <form [formGroup]="myForm" (ngSubmit)="addSong(song)" >
+    <mat-form-field>
+      <input matInput placeholder="Song Name" formControlName="songName" [(ngModel)]="song.songName" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Artist Name" formControlName="artistName" [(ngModel)]="song.artistName" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Number of Streams" formControlName="numberOfStreams" [(ngModel)]="song.numberOfStreams" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Release Year" formControlName="releaseYear" [(ngModel)]="song.releaseYear" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Duration in Seconds" formControlName="durationInSeconds" [(ngModel)]="song.durationInSeconds" required>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" (click)="onSaveClick()" [disabled]="!myForm.valid">SAVE</button>
+</div>

@@ -1,0 +1,35 @@
+.song-table {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  .song-table th,
+  .song-table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+  }
+  
+  .song-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .song-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .mt-15{
+    margin-top: 15px;
+  }
+
+  .mb-15{
+    margin-bottom:15px;
+  }
+
+  .mr-50{
+    margin-right: 50px;
+  }
+
+  .ml-10{
+    margin-left:60px;
+  }
